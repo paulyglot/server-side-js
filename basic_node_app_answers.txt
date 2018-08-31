@@ -1,0 +1,27 @@
+What is a Node module?
+What is the main difference between exports and module.exports?
+Why is using exports recommended?
+
+Programming Questions
+Before you begin, make sure you have greeting.js and main.js in the following states:
+
+greeting.js
+exports.greetingEnglish = function(){
+ console.log("Hello");
+}
+
+exports.greetingJapanese = function(){
+ console.log("Konichiwa");
+}
+main.js
+const greetings = require("./greeting.js");
+
+// "Hello"
+greetings.greetingEnglish();
+
+// "Konichiwa"
+greetings.greetingJapanese();
+Add two more functions, greetingSpanish and greetingIcelandic, in greeting.js.
+Utilize the two functions in main.js just like greetingEnglish and greetingJapanese.
+Create another Node module and import it into main.js. Your Node module should have at least two functions within it. Then, call a function from your Node module in main.js.
+Submit basic_node_app_answers.txt and your three .js files.
